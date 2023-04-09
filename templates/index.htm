@@ -1,0 +1,138 @@
+{% extends 'base.htm' %}
+{% block title %}HOME{% endblock title %}
+{% block body %}
+<div class="container-fluid my-2 mb-3">
+  <div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="active" aria-current="true" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="active" aria-current="true" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" class="active" aria-current="true" aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/static/img/burger.jpg" class="d-block"  width="100%" height=500 alt="burger">
+      </div>
+      <div class="carousel-item active">
+        <img src="/static/img/dosa.jpg" class="d-block"  width="100%" height=500 alt="dosa">
+      </div>
+      <div class="carousel-item active">
+        <img src="/static/img/thali1.jpg" class="d-block" width="100%" height=500 alt="thali">
+      </div>
+      <div class="carousel-item active">
+        <img src="/static/img/fries.jpg" class="d-block" width="100%" height=500 alt="fries">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+<div class="container my-2 mb-3">
+  <h1 style="text-align:center">PARTNER's</h1>
+<hr>
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="/static/img/amazon.jpeg" class="d-block" height=225>
+          <div class="card-body">
+            <p class="card-text">Amazon is an American multinational technology company founded by Jeff Bezos in 1994. Initially started as an online bookstore, Amazon has since grown into a vast conglomerate with a diverse range of products and services, including e-commerce, digital streaming, cloud computing, artificial intelligence, and more.</p>
+            <p>The company's headquarters are located in Seattle, Washington, but it has a global presence with operations in countries around the world.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="/static/img/google.jpeg" class="d-block" height=225>
+          <div class="card-body">
+            <p class="card-text">Google is a multinational technology company that specializes in Internet-related services and products. It was founded in 1998 by Larry Page and Sergey Brin while they were Ph.D. students at Stanford University in California.</p>
+            <p class="card-text">Today, Google is one of the world's most valuable companies, and its services are used by billions of people worldwide.The company's flagship product is its search engine, which allows users to find information on the internet by typing in keywords.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="/static/img/hotstar.jpeg" class="d-block" height=225>
+          <div class="card-body">
+            <p class="card-text">Hotstar is a subscription-based Indian over-the-top (OTT) streaming service owned by Star India, a subsidiary of The Walt Disney Company and including movies, TV shows, live sports, news, and original programming.</p>
+            <p class="card-text">Hotstar's content library includes a mix of Indian and international content from partners such as HBO, Showtime, and ABC. The service also offers live streaming of major cricket tournaments, including the Indian Premier League (IPL), as well as other sports events like football, tennis, and kabaddi.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="/static/img/insta.jpg" class="d-block" height=225>
+          <div class="card-body">
+            <p class="card-text">Instagram, also known as Insta, is a social media platform that allows users to share photos and videos, as well as interact with others through likes, comments, and direct messaging. It was created by Kevin Systrom and Mike Krieger and was launched in 2010. In 2012, Facebook acquired Instagram, and it has since become one of the world's most popular social media platforms, with over a billion monthly active users.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="/static/img/twitter.jpg" class="d-block" height=225>
+          <div class="card-body">
+            <p class="card-text">Twitter is a social media platform that allows users to share short messages, called tweets, with their followers. It was founded in 2006 by Jack Dorsey, Biz Stone, and Evan Williams, and has since grown into one of the world's most popular social media platforms, with over 300 million monthly active users.
+
+              Users can create a profile, follow other users, and share tweets, which can include text, photos, videos, and links. Tweets are limited to 280 characters.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="/static/img/youtube.jpg" class="d-block" height=225>
+          <div class="card-body">
+            <p class="card-text">YouTube is a video-sharing platform that allows users to upload, view, and share videos. It was founded in 2005 by three former PayPal employees - Chad Hurley, Steve Chen, and Jawed Karim. In 2006, Google acquired YouTube, and since then, it has become the world's largest video hosting platform, with over two billion monthly active users.
+
+              Users can create a YouTube channel, upload videos, and share them with their audience.</p>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+
+<div class="container my-2 mb-3">
+  <h1 style="text-align:center">BANK OFFER's</h1>
+  <hr>
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="/static/img/axis.jpeg" class="d-block" height=225>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="/static/img/hsbc.jpeg" class="d-block" height=225>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="/static/img/icici.jpeg" class="d-block" height=225>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="/static/img/idbi.jpeg" class="d-block" height=225>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="/static/img/industant.jpeg" class="d-block" height=225>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="/static/img/sbi.jpeg" class="d-block" height=225>
+        </div>
+      </div>
+  </div>
+</div>
+
+
+{% endblock body %}
+

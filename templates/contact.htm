@@ -1,0 +1,58 @@
+{% extends 'base.htm' %}
+{% block title %}CONTACT{% endblock title %}
+{% block body %}
+
+<div class="container-fluid  px-0">
+    <img src="/static/img/contact.jpg" class="d-block w-100 mx-0">
+</div>
+
+<hr>
+
+<div class="container" style="background:blue">
+<div class="container mt-3" style="background:grey">
+    <form method="post" action="/contact">
+    {% csrf_token %}
+        <div class="form-group">
+          <label for="name" class="form-label">NAME</label>
+          <input type="text" class="form-control" id="name" name="name" placeholder="enter your name">
+        </div>
+        <div class="form-group">
+          <label for="email" class="form-label">EMAIL</label>
+          <input type="text" class="form-control" id="name"  width="50px" name="email" placeholder="enter your email">
+        </div>
+        <div class="form-group">
+          <label for="password" class="form-label">PASSWORD</label>
+          <input type="password" class="form-control" id="password" name="password" placeholder="enter your password">
+        </div>
+        <div class="form-group">
+          <label for="address" class="form-label">ADDRESS</label>
+          <input type="text" class="form-control" id="address" name="address" placeholder="enter your address">
+        </div>
+        <div class="form-group">
+          <label for="city" class="form-label">CITY</label>
+          <input type="text" class="form-control" id="city" name="city" placeholder="enter your city">
+        </div>
+        <div class="form-group">
+          <label for="state" class="form-label">STATE</label>
+          <select id="state" name="state" class="form-select">
+            <option selected>Choose...</option>
+            <option>DELHI</option>
+            <option>RAJASTHAN</option>
+            <option>GUJRAT</option>
+            <option>PUNJAB</option>
+            <option>HARYANA</option>
+            <option>HIMACHAL</option>
+            <option>MADHYA PARDESH</option>
+            <option>UTTAR PARDESH</option>
+            <option>BIHAR</option>
+            <option>UTTRAKHAND</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary">SUBMIT</button>
+        </div>
+    </form>
+</div>
+</div>
+
+{% endblock body %}

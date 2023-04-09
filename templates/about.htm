@@ -1,0 +1,38 @@
+{% extends 'base.htm' %}
+{% block title %}ABOUT{% endblock title %}
+{% block body%}
+
+<div class="container my-2">
+  <div class="card shadow-lg">
+    <img src="/static/img/about-us.jpg" class="d-block" height=500>
+    <div class="card-body">
+      <p class="card-text">Our restaurant website is an essential marketing tool that allows restaurant owners to showcase their business, menu, and services to potential customers. A well-designed restaurant website can attract new customers, retain existing customers, and increase sales. The website should be visually appealing, easy to navigate, and provide accurate information about the restaurant's location, hours of operation, menu, prices, and specials.</p>
+      <p class="card-text">The menu is the most important element of a restaurant website, and it should be presented in an organized and visually appealing manner. It should include high-quality photos of the dishes, descriptions, and prices. The website should also include information about the restaurant's history, mission, and values. Testimonials and reviews from satisfied customers can also be added to the website to build trust and credibility.</p>
+      <p class="card-text">Other important elements that can be added to a restaurant website include online reservations, online ordering, gift cards, catering services, and special events. The website should be optimized for search engines to ensure that it is easily discoverable by potential customers. Overall, a well-designed restaurant website can help increase brand awareness, customer engagement, and revenue.</p>
+      <p class="card-text">A well-designed website can showcase your restaurant's brand, menu, location, and other important information. It should be easy to navigate, visually appealing, and optimized for search engines to help potential customers find your restaurant online. Your website should include high-quality photos of your food and restaurant, as well as customer reviews and testimonials to build trust and credibility. You may also want to include information about special events, promotions, and catering services to attract new customers. Finally, it's essential to ensure that your website is mobile-friendly, as many people search for restaurants on their mobile devices. With a well-designed restaurant website, you can create a strong online presence and help your business grow.</p>
+      <p class="card-text">A restaurant website is a vital tool for restaurant owners to promote their business and connect with customers. The website should be visually appealing, easy to navigate, and provide useful information about the restaurant, such as the menu, location, hours of operation, and contact information. It should also showcase the restaurant's brand, theme, and ambiance. High-quality photos of the dishes and the restaurant's interior can help to attract customers and give them a sense of what to expect. The website should also include customer reviews, as well as links to social media profiles and online ordering platforms. By providing a well-designed and informative website, restaurant owners can increase their online presence, improve customer engagement, and ultimately drive more traffic to their establishment.</p>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<div class="container" style="background:blue">
+  <div class="container mt-3" style="background:grey">
+    <form method="post" action="/about">
+      {% csrf_token %}
+          <div class="form-group mb-3">
+              <label for="email" class="form-label">EMAIL</label>
+              <input type="email" class="form-control" id="email"  name="email" placeholder="enter your email">
+          </div>
+          <div class="form-group mb-3">
+              <label for="feedback" class="form-label">FEEDBACK</label>
+              <textarea class="form-control" id="feedback" name="feedback" rows="3"></textarea>
+          </div>
+          <div class="form-group">
+              <button type="submit" class="btn btn-primary">SUBMIT</button>
+          </div>
+    </form>
+  </div>
+</div>
+{% endblock body %}
