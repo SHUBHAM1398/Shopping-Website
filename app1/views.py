@@ -3,6 +3,7 @@ from datetime import datetime
 from app1.models import Contact
 from app1.models import About
 from django.contrib import messages
+#shubham admin and password is shubham@123
 # Create your views here.
 def index(request):
     context ={
